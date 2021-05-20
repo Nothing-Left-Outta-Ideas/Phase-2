@@ -528,6 +528,7 @@ nav {
   height: 108px;
   margin-top: -24px;
   float: left;
+  transform: scaleX(-1);
 }
 
 .synopsis-para-row {

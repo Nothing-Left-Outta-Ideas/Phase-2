@@ -82,6 +82,110 @@ $(document).ready(function () {
       offset: "150px;",
     }
   );
+  
+  $(".js--message-1").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-1").addClass("message-ls-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-1").removeClass("message-ls-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-2").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-2").addClass("message-rs-hover");
+        $(".js--message-1").removeClass("message-ls-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-2").removeClass("message-rs-hover");
+        $(".js--message-1").addClass("message-ls-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-3").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-3").addClass("message-ls-hover");
+        $(".js--message-2").removeClass("message-rs-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-3").removeClass("message-ls-hover");
+        $(".js--message-2").addClass("message-rs-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-4").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-4").addClass("message-rs-hover");
+        $(".js--message-3").removeClass("message-ls-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-4").removeClass("message-rs-hover");
+        $(".js--message-3").addClass("message-ls-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-5").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-5").addClass("message-ls-hover");
+        $(".js--message-4").removeClass("message-rs-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-5").removeClass("message-ls-hover");
+        $(".js--message-4").addClass("message-rs-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-6").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-6").addClass("message-rs-hover");
+        $(".js--message-5").removeClass("message-ls-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-6").removeClass("message-rs-hover");
+        $(".js--message-5").addClass("message-ls-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--message-7").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--message-7").addClass("message-ls-hover");
+        $(".js--message-6").removeClass("message-rs-hover");
+      }
+      if (direction == "up") {
+        $(".js--message-7").removeClass("message-ls-hover");
+        $(".js--message-6").addClass("message-rs-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
 
   $(".js--section-effect").waypoint(
     function (direction) {
@@ -118,10 +222,10 @@ $(document).ready(function () {
   $(".js--solution-support-1").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-1").addClass("solution-support-ls-hover");
+        $(".js--solution-support-1").addClass("solution-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-1").removeClass("solution-support-ls-hover");
+        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
       }
     },
     {
@@ -131,12 +235,12 @@ $(document).ready(function () {
   $(".js--solution-support-2").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-2").addClass("solution-support-rs-hover");
-        $(".js--solution-support-1").removeClass("solution-support-ls-hover");
+        $(".js--solution-support-2").addClass("solution-support-ls-hover");
+        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-2").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-1").addClass("solution-support-ls-hover");
+        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
+        $(".js--solution-support-1").addClass("solution-support-rs-hover");
       }
     },
     {
@@ -146,12 +250,12 @@ $(document).ready(function () {
   $(".js--solution-support-3").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-3").addClass("solution-support-ls-hover");
-        $(".js--solution-support-2").removeClass("solution-support-rs-hover");
+        $(".js--solution-support-3").addClass("solution-support-rs-hover");
+        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-3").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-2").addClass("solution-support-rs-hover");
+        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
+        $(".js--solution-support-2").addClass("solution-support-ls-hover");
       }
     },
     {
@@ -161,12 +265,27 @@ $(document).ready(function () {
   $(".js--solution-support-4").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-4").addClass("solution-support-rs-hover");
-        $(".js--solution-support-3").removeClass("solution-support-ls-hover");
+        $(".js--solution-support-4").addClass("solution-support-ls-hover");
+        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-4").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-3").addClass("solution-support-ls-hover");
+        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
+        $(".js--solution-support-3").addClass("solution-support-rs-hover");
+      }
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js--solution-support-5").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--solution-support-5").addClass("solution-support-rs-hover");
+        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
+      }
+      if (direction == "up") {
+        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
+        $(".js--solution-support-4").addClass("solution-support-ls-hover");
       }
     },
     {
@@ -174,15 +293,16 @@ $(document).ready(function () {
     }
   );
 
+
   $(".js--solution-conclusion").waypoint(
     function (direction) {
       if (direction == "down") {
         $(".js--solution-conclusion").addClass("solution-conclusion-hover");
-        $(".js--solution-support-4").removeClass("solution-support-rs-hover");
+        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
       }
       if (direction == "up") {
         $(".js--solution-conclusion").removeClass("solution-conclusion-hover");
-        $(".js--solution-support-4").addClass("solution-support-rs-hover");
+        $(".js--solution-support-5").addClass("solution-support-rs-hover");
       }
     },
     {

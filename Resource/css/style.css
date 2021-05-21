@@ -137,8 +137,11 @@ a {
   transition: all 0.2s;
 }
 
+#section-cover h2 {
+  border-color: #42b0ff;
+}
+
 .section-cause h2,
-#section-cover h2,
 .section-origin h2,
 .section-effect h2,
 .section-solution h2 {
@@ -304,7 +307,7 @@ header {
 /*----------------------------------------------- NAVIGATION  ---------------------------------------------------*/
 nav {
   margin: 0;
-  background-color: rgba(12, 12, 16);
+  background-color: rgba(12, 12, 16, 1);
   width: 100% !important;
   -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
@@ -1059,10 +1062,14 @@ nav {
   width: 50%;
   margin: 0 auto;
   line-height: 1.2rem;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
 }
 
 #h3-white {
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   clip-path: polygon(0% 0, 50% 0%, 50% 100%, 0 100%);
   position: relative;
   transform: translate(0, -100%);
@@ -1177,4 +1184,21 @@ footer {
 .underline {
   border-bottom: 2px solid #00ff19 !important;
   color: #00ff19 !important;
+}
+
+/*────────────────── 
+     Scrollbar
+──────────────────*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(5, 5, 5, 1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+  box-shadow: inset 0 0 20px rgba(245, 245, 245, 0.671);
+}
+::-webkit-scrollbar-track {
+  margin-top: 80px;
+  border-radius: 10px;
 }
